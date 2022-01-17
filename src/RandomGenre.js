@@ -5,7 +5,7 @@ import axios from "axios";
 
 const RandomGenre = (props) => {
 
-    const [genreInfo, setGenreInfo] = useState();
+    // const [genreInfo, setGenreInfo] = useState();
     const url = "https://binaryjazz.us/wp-json/genrenator/v1/genre/1";
 
   //      api call      //
@@ -18,7 +18,7 @@ const RandomGenre = (props) => {
 
   }) . then( (response) => {
     console.log(response.data);
-    setGenreInfo(response.data);
+    // setGenreInfo(response.data);
   })
   .catch(error => {
     console.log(error)
@@ -26,11 +26,8 @@ const RandomGenre = (props) => {
   }, [])
 
     return (
-
-
-
         <div>
-            <h3>The genre you should explore is.........{genreInfo}</h3>
+            {/* <h3>The genre you should explore is.........{genreInfo}</h3> */}
         </div>
     )
 }

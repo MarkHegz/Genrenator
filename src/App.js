@@ -2,16 +2,20 @@ import './App.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import RandomGenre from './RandomGenre.js';
+import { Component } from 'react/cjs/react.production.min';
 
 
 function App() {
 
-  const handleClick=() => {
+  
+  const handleClick=(props) => {
+    
     console.log("button clicked");
   }
 
   const [genre, setGenre] = useState([]); // takes info 
   const [visible, setVisible] = useState(1);
+  const [genreInfo, setGenreInfo] = useState();
 
   
   
