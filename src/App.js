@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import RandomGenre from './RandomGenre.js';
+
 
 function App() {
+
+  const [genre, setGenre] = useState(); // takes info 
+
+
+  //   // api call
+  // useEffect( () => {
+  //   axios({
+  //     url: "https://binaryjazz.us/wp-json/genrenator/v1/genre/",
+  //     method: "GET",
+  //     dataResponse: "json",
+
+  // }) . then( (response) => {
+  //   console.log(response.data);
+  //   setGenre(response.data);
+  // });
+  // })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>The genre you should explore is.........{genre}</h3>
+      {/* < RandomGenre /> */}
+
     </div>
   );
 }
