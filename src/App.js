@@ -6,26 +6,23 @@ import RandomGenre from './RandomGenre.js';
 
 function App() {
 
-  const [genre, setGenre] = useState(); // takes info 
+  const handleClick=() => {
+    console.log("button clicked");
+  }
+
+  const [genre, setGenre] = useState([]); // takes info 
+  const [visible, setVisible] = useState(1);
+
+  
+  
 
 
-  //   // api call
-  // useEffect( () => {
-  //   axios({
-  //     url: "https://binaryjazz.us/wp-json/genrenator/v1/genre/",
-  //     method: "GET",
-  //     dataResponse: "json",
-
-  // }) . then( (response) => {
-  //   console.log(response.data);
-  //   setGenre(response.data);
-  // });
-  // })
   return (
     <div className="App">
-      <h3>The genre you should explore is.........{genre}</h3>
-      {/* < RandomGenre /> */}
-
+      <h1>Genrenator</h1>
+      <h2>Click the button below to explore a random genre!</h2>
+      <button onClick={handleClick}>Click me</button>
+      < RandomGenre />
     </div>
   );
 }
