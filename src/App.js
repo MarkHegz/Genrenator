@@ -6,28 +6,34 @@ import { Component } from 'react/cjs/react.production.min';
 
 
 function App() {
+  const [ randomNumber, setRandomNumber] = useState()
 
   
   const handleClick=(props) => {
+        // const randomNumber = setRandomNumber[Math.floor(Math.random()* randomNumber.length)];
+        // randomNumber = setRandomNumber;
+
     
     console.log("button clicked");
   }
 
-  const [genre, setGenre] = useState([]); // takes info 
-  const [visible, setVisible] = useState(1);
-  const [genreInfo, setGenreInfo] = useState();
-
-  
-  
-
-
   return (
-    <div className="App">
-      <h1>Genrenator</h1>
-      <h2>Click the button below to explore a random genre!</h2>
-      <button onClick={handleClick}>Click me</button>
-      < RandomGenre />
+    <div className="wrapper">
+      <header>
+        <h1>Genrenator</h1>
+      </header>
+      <main>
+          <h2>Click the button below to explore a random genre</h2>
+        <div className="clickMe">
+         <button onClick={handleClick}>Click me</button>
+        </div>
+        < RandomGenre />
+      </main>
+      <footer>
+        <p>Created at&nbsp;<a href="https://junocollege.com/">Juno College</a></p>
+      </footer>
     </div>
+
   );
 }
 

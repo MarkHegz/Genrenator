@@ -16,9 +16,102 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./images/headphone-image.png);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Red Rose', cursive;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html {
+  font-size: 125%;
+
+}
+
+.wrapper {
+  width:  85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  color: ghostwhite;
+  text-shadow: 3px 3px 6px rgb(197, 5, 255);
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.7rem;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  margin: 0 0 9rem 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 6rem;
+  text-transform: capitalize;
+}
+
+.clickMe {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7.5rem;
+}
+
+.clickMe button {
+  font-family: 'Red Rose', cursive;
+  font-weight: 400;
+  text-transform: capitalize;
+  background-color: rgba(0, 0, 0, 0);
+  color: ghostwhite;
+  border-color: ghostwhite;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+.clickMe button:hover{
+  background-color: rgb(176, 254, 255);
+  color: rgb(46, 135, 250);
+  border-color: rgb(46, 135, 250);
+}
+.clickMe button:focus {
+  background-color: rgb(176, 254, 255);
+  color: rgb(46, 135, 250);
+  border-color: rgb(46, 135, 250);
+}
+
+footer {
+  font-weight: 300;
+}
+footer
+a:hover,
+a:focus {
+    /* text-decoration: underline; */
+    background-color: rgb(176, 254, 255);
+    color: rgb(46, 135, 250);
+    border-color: rgb(46, 135, 250);
+}
+
+
+
+
