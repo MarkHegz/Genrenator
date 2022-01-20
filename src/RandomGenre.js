@@ -3,14 +3,14 @@ import axios from "axios";
 
 
 
-const RandomGenre = (props) => {
+const RandomGenre = () => {
 
     const [genreInfo, setGenreInfo] = useState([]);
 
+
   //      api call      //
-  useEffect( () => {
-    // const myArray = [];
-    // const randomNumber = myArray[Math.floor(Math.random()*myArray.length)];
+  const handleClick = () => {
+
     axios({
       url: "https://binaryjazz.us/wp-json/genrenator/v1/genre/",
       method: "GET",
@@ -23,11 +23,16 @@ const RandomGenre = (props) => {
   .catch(error => {
     console.log(error)
   })
-  }, [])
+  } 
 
     return (
         <div>
+        <div className="clickMe">
+          <button onClick={handleClick}>Click me</button>
+        </div>
+        <div className="genreContent">
             <h3>{genreInfo}</h3>
+        </div>
         </div>
     )
 }
