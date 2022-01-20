@@ -1,24 +1,18 @@
 import './App.css';
+
+import Header from './Header.js';
 import RandomGenre from './RandomGenre.js';
+import Footer from './Footer.js';
 
 
 function App() {
 
   return (
     <div className="wrapper">
-      <header>
-        <h1>Genrenator</h1>
-      </header>
-      <main>
-          <h2>Click the button below to explore a random genre</h2>
-        < RandomGenre />
-      </main>
-      <footer>
-          <p>Created at&nbsp;<a href="https://junocollege.com/">Juno College</a></p>
-      </footer>
+      < Header />
+      < RandomGenre />
+      < Footer />
     </div>
-
   );
 }
-
 export default App;
