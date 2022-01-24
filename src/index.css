@@ -31,6 +31,7 @@ code {
 
 html {
   font-size: 125%;
+
 }
 
 .wrapper {
@@ -54,7 +55,6 @@ a {
 h1 {
   font-weight: 700;
   font-size: 2.7rem;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: .25rem;
   margin: 0 0 9rem 0;
@@ -63,28 +63,20 @@ h1 {
 h2 {
   font-size: 1.8rem;
   font-weight: 500;
-  text-align: center;
   margin-bottom: 1.5rem;
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  text-align: center;
-  margin: 0;
+  margin-bottom: 6rem;
   text-transform: capitalize;
-  position: absolute;
-}
-
-.genreContent {
-  display: flex;
-  justify-content: center;
 }
 
 .clickMe {
   display: flex;
   justify-content: center;
-  margin-bottom: 6.6rem;
+  margin-bottom: 7.5rem;
 }
 
 .clickMe button {
@@ -97,13 +89,11 @@ h3 {
   cursor: pointer;
   letter-spacing: 1.5px;
 }
-
 .clickMe button:hover{
   background-color: rgb(176, 254, 255);
   color: rgb(46, 135, 250);
   border-color: rgb(46, 135, 250);
 }
-
 .clickMe button:focus {
   background-color: rgb(176, 254, 255);
   color: rgb(46, 135, 250);
@@ -112,65 +102,16 @@ h3 {
 
 footer {
   font-weight: 300;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10rem;
-  position: relative;
 }
-
-footer p {
-  position: absolute;
-  margin: 0;
-}
-
 footer
 a:hover,
 a:focus {
-  background-color: rgb(176, 254, 255);
-  color: rgb(46, 135, 250);
-  border-color: rgb(46, 135, 250);
+    /* text-decoration: underline; */
+    background-color: rgb(176, 254, 255);
+    color: rgb(46, 135, 250);
+    border-color: rgb(46, 135, 250);
 }
 
 
-/* media queries */
 
 
-@media (max-width: 1140px) {
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 1000px) {
-  h2 {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 670px) {
-  h1 {
-    font-size: 2.4rem;
-  }
-  h3 {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 540px) {
-  h1 {
-    font-size: 2.1rem;
-  }
-}
-
-@media (max-width: 447px) {
-  h1{
-    font-size: 1.65rem;
-  }
-}
-
-@media (max-width: 339px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-}
