@@ -75,6 +75,9 @@ h3 {
   text-transform: capitalize;
   position: absolute;
 }
+main {
+  height: 100%;
+}
 
 .genreContent {
   display: flex;
@@ -114,9 +117,9 @@ footer {
   font-weight: 300;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 10rem;
-  position: relative;
+  align-items: flex-end;
+  margin-top: 9rem;
+  /* position: relative; */
 }
 
 footer p {

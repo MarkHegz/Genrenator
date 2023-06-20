@@ -2,7 +2,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <p>Created at&nbsp;<a href="https://junocollege.com/">Juno College</a></p>
+            <p>Created by Mark Hegarty</p>
         </footer>
     )
 }
